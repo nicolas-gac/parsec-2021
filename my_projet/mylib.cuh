@@ -17,13 +17,15 @@ __global__ void kernel_seuillageGPU(unsigned char *d_image_in, unsigned char *d_
 	j = jFirst + threadIdx.y;
 
 	float nr = 0;
-	/*if(nr > 0.7)
-		(d_image_out[1][j][i] = d_image_in[0][j][i]);
+
+nr=d_image_in[2+j*3+i*3*size_j]/sqrtf(d_image_in[0+j*3+i*3*size_j]*d_image_in[0+j*3+i*3*size_j]+d_image_in[1+j*3+i*3*size_j]*d_image_in[1+j*3+i*3*size_j]+d_image_in[2+j*3+i*3*size_j]*d_image_in[2+j*3+i*3*size_j]);
+
+	if(nr > 0.7)
+		d_image_out[1+j*3+i*3*size_j] = d_image_in[2+j*3+i*3*size_j];
 	else
-		d_image_out[1][j][i] = d_image_in[1][j][i]; */
+		d_image_out[1+j*3+i*3*size_j] = d_image_in[1+j*3+i*3*size_j]; 
 
 	d_image_out[0+j*3+i*3*size_j] = d_image_in[0+j*3+i*3*size_j];
-	d_image_out[1+j*3+i*3*size_j] = d_image_in[1+j*3+i*3*size_j];
 	d_image_out[2+j*3+i*3*size_j] = d_image_in[2+j*3+i*3*size_j];
 
 

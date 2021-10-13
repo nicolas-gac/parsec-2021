@@ -47,9 +47,9 @@ int main(int, char**)
 			Mat cont = contour(frame);
 	    		imshow("contour", cont);
 		}
-		else if (c == 100){			// if 'd' est appuye
+		/*else if (c == 100){			// if 'd' est appuye
 			Mat seuilgpu = seuillageGPU(frame);
-	    		imshow("seuillage GPU",seuilgpu);
+	    		imshow("seuillage GPU",seuilgpu);*/
 ;
 		}
 		else if(c == 101) destroyAllWindows();	// if 'e' est appuye

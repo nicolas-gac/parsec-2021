@@ -16,7 +16,7 @@ list(APPEND HEADER_REP ${ROOT_DIR}/ ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES} "/
 
 
 set(CPP_FILES )
-set(CU_FILES ${ROOT_DIR}/main_nano.cu ${ROOT_DIR}/mylib.cu)
+set(CU_FILES ${ROOT_DIR}/main_PC.cu ${ROOT_DIR}/mylib.cu)
 
 
 set(CUDA_SEPARABLE_COMPILATION ON)
