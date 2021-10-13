@@ -12,7 +12,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 
 
-cuda_add_executable(camera_test ../main_openfile.cpp)
+cuda_add_executable(camera_test ../main_webcam.cpp)
 
 target_link_libraries(camera_test Qt5::Widgets)
 target_link_libraries(camera_test Qt5::Core)
