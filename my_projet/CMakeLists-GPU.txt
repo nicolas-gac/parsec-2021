@@ -15,7 +15,7 @@ find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 list(APPEND HEADER_REP ${ROOT_DIR}/ ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES} "/usr/local/cuda/samples/common/inc/" "${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES}/../samples/common/inc")
 
 
-set(CPP_FILES )
+set(CPP_FILES ${ROOT_DIR}/mylib.cpp)
 set(CU_FILES ${ROOT_DIR}/main_PC.cu ${ROOT_DIR}/mylib.cu)
 
 

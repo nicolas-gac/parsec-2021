@@ -1,4 +1,5 @@
 #include "mylib.h"
+#include "mylib.cuh"
 #include <cuda_runtime.h>
 
 // acces au flux de la camera
