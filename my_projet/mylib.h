@@ -11,7 +11,6 @@
 #include <string.h>
 #include <math.h>
 #include <iostream>
-#include <cuda_runtime.h>
 
 using namespace std;
 
@@ -28,7 +27,6 @@ Mat noirBlanc(Mat frame);
 //---------------------seuillage------------------
 
 Mat seuillage(Mat frame);
-Mat seuillageGPU( Mat in);
 
 //---------------------contour--------------------
 

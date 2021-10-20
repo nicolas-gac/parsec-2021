@@ -3,6 +3,12 @@
 
 #include "mylib.h"
 
+
+#include <cuda_runtime.h>
+
+
+Mat seuillageGPU( Mat in);
+
 // GPU
 
 __global__ void kernel_seuillageGPU(unsigned char *d_image_in, unsigned char *d_image_out,int size_j)

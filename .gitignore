@@ -1,3 +1,5 @@
 **/Release
 **/.metadata
 **/RemoteSystemsTempFiles
+**/release
+**/CMakeLists.txt
