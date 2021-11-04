@@ -36,24 +36,23 @@ int main(int, char**)
 		Mat frame;
 	    	cap >> frame;
 	    	char c=(char)waitKey(25);
-		if(c == 97){				// if 'a' est appuye
+		if(c == '1'){				// if '1' est appuye
 			Mat NB = noirBlanc(frame);
 	    		imshow("NoirEtBlanc", NB);
 		}
-		else if(c == 98){			// if 'b' est appuye
+		else if(c == '2'){			// if '2' est appuye
 			Mat seuil = seuillage(frame);
 	    		imshow("seuillage", seuil);
 		}
-		else if (c == 99){			// if 'c' est appuye
+		else if (c == '3'){			// if '3' est appuye
 			Mat cont = contour(frame);
 	    		imshow("contour", cont);
 		}
-		/*else if (c == 100){			// if 'd' est appuye
+		else if (c == '4'){			// if '4' est appuye
 			Mat seuilgpu = seuillageGPU(frame);
-	    		imshow("seuillage GPU",seuilgpu);*/
-;
+	    		imshow("seuillage GPU",seuilgpu);
 		}
-		else if(c == 101) destroyAllWindows();	// if 'e' est appuye
+		else if(c == '5') destroyAllWindows();	// if '5' est appuye
 
 		else imshow("frame", frame);
 			

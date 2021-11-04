@@ -1,7 +1,7 @@
 #Déclaration du projet
 project(camera_test)
 
-find_package(CUDA REQUIRED)
+#find_package(CUDA REQUIRED)
 
 #link_directories(/usr/local/lib)
 
